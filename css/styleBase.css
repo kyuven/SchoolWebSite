@@ -4,28 +4,35 @@
 }
 
 header {
-    padding-top: 32px;
+    background-image: url(https://mcdn.wallpapersafari.com/medium/62/76/vLM3wA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    padding-top: 245px;
     text-align: center; /* faz calculo para si */
-    height: calc(120px + 32px);
+    height: calc(160px + 440px);
 }
 
 .myPhoto {
-    width: 120px;
+    width: 160px;
     margin: auto;
     border-radius: 50%;
     padding: 4px;
-    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100%);
+    background-color: black;
     display: flex;
     /* referencia a enimação */
     transition: transform .3s;
     animation: fromTop .9s .4s backwards;
 }
 
-header div:hover {
+section div:hover {
     transform: scale(1.1);
 }
 
-header img {
+section img {
     width: 100%;
     border-radius: 50%;
 }
