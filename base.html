@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleBase.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styleBase.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Welcome</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+  <script>
+    var timestamp = new Date().getTime();
+    var dtChegada  = timestamp;
+    var dtPartida = "13/11/2021 11:20:00";
+  
+    var ms = moment(dtChegada,"DD/MM/YYYY HH:mm:ss").diff(moment(dtPartida,"DD/MM/YYYY HH:mm:ss"));
+    var d = moment.duration(ms);
+    var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");
+  
+    console.log(s);
+  </script>
 </head>
 <body>
     <header>
