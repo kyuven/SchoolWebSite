@@ -10,7 +10,7 @@ header {
     background-attachment: fixed;
 }
 
-section {
+header section {
     padding-top: 245px;
     text-align: center; /* faz calculo para si */
     height: calc(160px + 440px);
